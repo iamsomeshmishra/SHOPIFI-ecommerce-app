@@ -1,0 +1,36 @@
+- `[ ]` Configure Absolute Imports & Aliases
+    - `[ ]` Update `frontend/vite.config.js` and add `frontend/jsconfig.json` for `@/` resolution
+    - `[ ]` Update `backend/package.json` with the native subpath `"imports"` mapping for `#`
+- `[ ]` Backend Feature Migration
+    - `[ ]` Move shared configs, utilities, and middlewares to `backend/src/features/shared/`
+    - `[ ]` Migrate User schema to `backend/src/features/users/`
+    - `[ ]` Migrate Category model and route controllers to `backend/src/features/categories/`
+    - `[ ]` Migrate Product model, reviews, and route controllers to `backend/src/features/products/`
+    - `[ ]` Migrate Order schema and route controllers to `backend/src/features/orders/`
+    - `[ ]` Migrate Payment checkout route logic to `backend/src/features/payments/`
+    - `[ ]` Migrate Wishlist route logic to `backend/src/features/wishlist/`
+    - `[ ]` Migrate Admin analytics route logic to `backend/src/features/admin/`
+    - `[ ]` Write Express initialization in `backend/src/app/app.js` and startup script in `backend/src/server.js`
+    - `[ ]` Write barrel export index files for all backend features
+- `[ ]` Frontend Feature Migration
+    - `[ ]` Set up standard API client inside `frontend/src/features/shared/api/axiosClient.js`
+    - `[ ]` Move Button, Input, Navbar, and Footer to `frontend/src/features/shared/`
+    - `[ ]` Move auth forms, pages, and stores to `frontend/src/features/auth/`
+    - `[ ]` Move home pages to `frontend/src/features/home/`
+    - `[ ]` Move product catalog views and cards to `frontend/src/features/products/`
+    - `[ ]` Move cart page and cartStore to `frontend/src/features/cart/`
+    - `[ ]` Move checkout page to `frontend/src/features/checkout/`
+    - `[ ]` Move user dashboard to `frontend/src/features/dashboard/`
+    - `[ ]` Move admin dashboards and category controls to `frontend/src/features/admin/`
+    - `[ ]` Move wishlist store to `frontend/src/features/wishlist/`
+    - `[ ]` Setup routing script inside `frontend/src/router/index.jsx`
+    - `[ ]` Write barrel export index files for all frontend features
+- `[ ]` Import Paths Rewrite & Seeding
+    - `[ ]` Rewrite all backend imports using `#` absolute prefixes
+    - `[ ]` Rewrite all frontend imports using `@/` absolute prefixes and barrel imports
+    - `[ ]` Update seed script `seed.js` to reference the new database models
+- `[ ]` Verification & Deletion of Obsolete Folders
+    - `[ ]` Verify database seeding is operational
+    - `[ ]` Verify frontend builds successfully
+    - `[ ]` Launch local dev servers and verify pages/actions in browser
+    - `[ ]` Clean up legacy directory layouts
