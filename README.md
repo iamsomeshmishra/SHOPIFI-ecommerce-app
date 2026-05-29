@@ -184,7 +184,7 @@ The `/frontend/vercel.json` and `/vercel.json` are fully configured to route req
   "rewrites": [
     {
       "source": "/api/:path*",
-      "destination": "https://cinematic-ecommerce-backend.onrender.com/api/:path*"
+      "destination": "https://e-commerce-app-b89l.onrender.com/api/:path*"
     },
     {
       "source": "/(.*)",
